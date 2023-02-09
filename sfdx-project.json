@@ -1,0 +1,19 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "string-replacements",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "56.0",
+  "replacements": [
+    {
+      "filename": "force-app/main/default/namedCredentials/HappySoup.namedCredential-meta.xml",
+      "stringToReplace": "https://happysoup.io/auth",
+      "replaceWithEnv": "HAPPY_SOUP_URL"
+    }
+  ]
+}
