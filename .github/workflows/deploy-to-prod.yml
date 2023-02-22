@@ -6,7 +6,7 @@ on:
     branches:
       - main
 jobs:
-  deploy-to-uat:
+  deploy-to-production:
     runs-on: ubuntu-latest
     if: ${{ github.actor != 'dependabot[bot]' }}
     steps:
