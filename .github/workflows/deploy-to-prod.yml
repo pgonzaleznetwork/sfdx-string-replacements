@@ -34,4 +34,5 @@ jobs:
         run: sfdx auth:sfdxurl:store -f ./PROD_URL.txt -s -a targetOrg 
       - name: Deployment 
         run: >
-          source .env.prod ; sfdx force:source:deploy -p "force-app"  --testlevel RunLocalTests --json
+          source .env.prod && sfdx force:source:deploy -p "force-app"  --testlevel RunLocalTests --json
+        shell: bash
