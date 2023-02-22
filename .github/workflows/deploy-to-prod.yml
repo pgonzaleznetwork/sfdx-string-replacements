@@ -37,6 +37,8 @@ jobs:
         with:
           path: ./
           mode: prod
+      - name: print env variables
+        run: echo ${{env.HAPPY_SOUP_URL}}
       - name: Deployment 
         run: sfdx force:source:deploy -p "force-app"  --testlevel RunLocalTests --json
         shell: bash
