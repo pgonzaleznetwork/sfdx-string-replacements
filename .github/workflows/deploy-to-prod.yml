@@ -40,5 +40,5 @@ jobs:
       - name: print env variables
         run: echo ${{env.HAPPY_SOUP_URL}}
       - name: Deployment 
-        run: sfdx force:source:deploy -p "force-app"  --testlevel RunLocalTests --json
+        run: sfdx force:source:deploy -p "force-app"  --json
         shell: bash
