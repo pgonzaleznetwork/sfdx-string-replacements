@@ -37,7 +37,6 @@ jobs:
         with:
           path: ./
           mode: prod
-          load-mode: strict
       - name: Deployment 
         run: sfdx force:source:deploy -p "force-app"  --testlevel RunLocalTests --json
         shell: bash
