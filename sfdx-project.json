@@ -12,7 +12,7 @@
   "replacements": [
     {
       "filename": "force-app/main/default/namedCredentials/HappySoup.namedCredential-meta.xml",
-      "stringToReplace": "https://happysoup.io/auth",
+      "stringToReplace": "{env.HAPPY_SOUP_URL}",
       "replaceWithEnv": "HAPPY_SOUP_URL"
     }
   ]
