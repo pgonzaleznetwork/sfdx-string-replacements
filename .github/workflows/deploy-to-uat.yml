@@ -1,8 +1,6 @@
 name: Deploy to UAT
 on:
   push:
-    paths:
-      - force-app/**
     branches:
       - uat
 jobs:

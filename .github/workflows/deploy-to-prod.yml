@@ -1,8 +1,6 @@
 name: Deploy to Production
 on:
   push:
-    paths:
-      - force-app/**
     branches:
       - main
 jobs:
