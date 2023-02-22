@@ -1,6 +1,6 @@
 public with sharing class SampleClass {
     public SampleClass() {
-        String url = 'uat-happysoup.io';
+        String url = 'uat-2happysoup.io';
         System.debug('The URL is '+url);
     }
 }

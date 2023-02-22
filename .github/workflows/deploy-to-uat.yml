@@ -36,4 +36,4 @@ jobs:
         run: sfdx auth:sfdxurl:store -f ./UAT_URL.txt -s -a targetOrg
       - name: Deployment 
         run: >
-          source .env.uat && sfdx force:source:deploy -p "force-app"  --testlevel RunLocalTests --json
+          source .env.uat ; sfdx force:source:deploy -p "force-app"  --testlevel RunLocalTests --json
