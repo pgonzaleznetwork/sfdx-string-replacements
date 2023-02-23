@@ -10,9 +10,11 @@ The variables are defined in org-specific `.env` files in the root directory.
 
 ## Loading the env variables
 
-I'm using [this GitHub action](https://github.com/xom9ikk/dotenv) because it's not possible to natively read a `.env` file. Go leave a start!
+I'm using [this GitHub action](https://github.com/xom9ikk/dotenv) because it's not possible to natively read a `.env` file.
 
-Read the documentation before you use it. 
+Go leave a star!
+
+Also, read the documentation before you use it. 
 
 ## Deploy command with loaded variables
 
