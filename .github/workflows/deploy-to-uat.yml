@@ -32,6 +32,13 @@ jobs:
           echo ${{ secrets.UAT_URL}} > ./UAT_URL.txt
       - name: Authenticate to target Org
         run: sfdx auth:sfdxurl:store -f ./UAT_URL.txt -s -a targetOrg
+      - name: Load .env file
+        uses: xom9ikk/dotenv@v2
+        with:
+          path: ./
+          mode: uat
+      - name: print env variables
+        run: echo ${{env.HAPPY_SOUP_URL}}
       - name: Deployment 
-        run: >
-          source .env.uat ; sfdx force:source:deploy -p "force-app"  --testlevel RunLocalTests --json
+        run: sfdx force:source:deploy -p "force-app"  --json
+        shell: bash
